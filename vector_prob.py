@@ -107,7 +107,7 @@ mag_vector1 = (coefficients_v[0] ** 2 + coefficients_v[1] ** 2 + coefficients_v[
 print("Norm of vector (V): ", mag_vector1)
 
 add_vector = [coefficients_v[i] + coefficients_w[i] for i in range(3)]
-print("Adding vector (V) with vector (V): ", add_vector1)
+print("Adding vector (V) with vector (V): ", add_vector)
 
 inp_scaler = int(input("Enter a scaler number: "))
 mult_scaler = [inp_scaler * coefficients_v[i] for i in range(3)]
