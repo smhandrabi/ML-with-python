@@ -113,6 +113,7 @@ inp_scaler = int(input("Enter a scaler number: "))
 mult_scaler = [inp_scaler * coefficients_v[i] for i in range(3)]
 print("Multipying vector (V) with the scalar: ",mult_scaler)
 
-v_dot_w = (coefficients_v[0]*coefficients_w[0]) + (coefficients_v[1]*coefficients_w[1]) + (coefficients_v[2]*coefficients_w[2])
-
+v_dot_w = 0
+for i in range(3):
+    v_dot_w = v_dot_w + (coefficients_v[i]*coefficients_w[i])
 print("Vector (V) dot Vector (W): ", v_dot_w)
