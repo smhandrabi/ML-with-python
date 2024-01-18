@@ -106,11 +106,11 @@ coefficients_w = coefficients(eq2)
 mag_vector1 = (coefficients_v[0] ** 2 + coefficients_v[1] ** 2 + coefficients_v[2] ** 2)**0.5
 print("Norm of vector (V): ", mag_vector1)
 
-add_vector1 = [coefficients_v[0] + coefficients_v[0], coefficients_v[1] + coefficients_v[1], coefficients_v[2] + coefficients_v[2]]
+add_vector = [coefficients_v[i] + coefficients_w[i] for i in range(3)]
 print("Adding vector (V) with vector (V): ", add_vector1)
 
 inp_scaler = int(input("Enter a scaler number: "))
-mult_scaler = [(inp_scaler * coefficients_v[0]), (inp_scaler * coefficients_v[1]), (inp_scaler * coefficients_v[2])]
+mult_scaler = [inp_scaler * coefficients_v[i] for i in range(3)]
 print("Multipying vector (V) with the scalar: ",mult_scaler)
 
 v_dot_w = (coefficients_v[0]*coefficients_w[0]) + (coefficients_v[1]*coefficients_w[1]) + (coefficients_v[2]*coefficients_w[2])
